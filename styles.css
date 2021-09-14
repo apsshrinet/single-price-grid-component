@@ -9,15 +9,28 @@
 }
 body{
     background-color: var(--light-gray);
-    height: 100vh;
-    padding: 5rem 2rem;
 }
 
 .joincommunity{
-    font-weight: 700;
+    font-weight: 1000;
     color: var(--cyan);
+    font-size: 1.5rem;
 }
 .day30{
+    color: var(--bright-yellow);
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+p{
+    color: gray;
+}
+#dollar29{
+    color: white;
+    font-size: 2em;
+}
+#box1{
+    background-color: white;
 }
 #box2{
     background-color: var(--cyan);
@@ -25,24 +38,36 @@ body{
 #box3{
     background-color: var(--off-cyan);
 }
+.white_word{
+    color: white;
+}
 @media screen and (min-width:600px) {
-    body{
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    #box-container{
+    .container{
+        margin: 15vh auto;
+        font-family: 'Karla', sans-serif;
+        width: 600px;
+        height: 400px;
         display: grid;
-        font-family: Karla,sans-serif;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 150px;
+        grid-template-rows: 35% 65%;
     }
     #box1{
         grid-column: 1/3;
+        grid-row: 1/2;
+        padding: 30px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     } 
     #box2{
-        
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 30px;
+        border-bottom-left-radius: 20px;
     }
     #box3{
-    
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 30px;
+        border-bottom-right-radius: 20px;
     }
-}
+} 
